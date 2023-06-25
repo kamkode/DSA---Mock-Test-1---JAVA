@@ -1,0 +1,22 @@
+public class Solution {
+    public void moveZeroes(int[] nums) {
+        
+        int j = 0;
+
+       
+        while (i < nums.length) {
+            // If the current element is non-zero, move it to the position indicated by the second pointer
+            if (nums[i] != 0) {
+                nums[j] = nums[i];
+                j++;
+            }
+            i++;
+        }
+
+       
+        while (j < nums.length) {
+            nums[j] = 0;
+            j++;
+        }
+    }
+}
